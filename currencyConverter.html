@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Currency Converter</h1>
+        <p class="text">Enter Amount</p>
+        <input type="number" placeholder="Enter the Amount" class="input">
+        <div class="exchange">
+            <div class="from">
+                <p>From</p>
+                <div class="from-selector">
+                    <img src="https://flagsapi.com/US/flat/64.png" class="f-img">
+                    <select class="f-country country" >
+                        <option value="USD" selected>USD</option>
+                    </select>
+                </div>
+            </div>
+            <i class="fa-solid fa-right-left" style="font-size: 2rem; padding-top: 2rem;"></i>
+            <div class="To">
+                <p>To</p>
+                <div class="To-selector">
+                    <img src="https://flagsapi.com/IN/flat/64.png" class="t-img">
+                    <select class="t-country country">
+                        <option value="INR" selected>INR</option>
+                    </select>
+            </div>
+            </div>
+        </div>
+        <p class="ans "class="active-style"></p>
+        <button class="get">Get Exchange Rate</button>
+    </div>
+    <script src="codes.js"></script>
+    <script src="currencys.js"> </script>
+</body>
+</html>
