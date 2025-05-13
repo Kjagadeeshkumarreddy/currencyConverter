@@ -35,9 +35,9 @@ let amount_val=amount.value;
 if(amount_val<0){
     alert("amount should not be in negative");
 }
-if(amount_val.trim()===""){
+else if(amount_val.trim()===""){
     alert("amount should not be in Empty");
-}
+}else{
 let newurl=`${url}${from_country.toLowerCase()}.json`;
 calculation= async (amount_val)=>{
     let data=await fetch(newurl);
@@ -48,4 +48,5 @@ calculation= async (amount_val)=>{
 }
 calculation(amount_val);
 p.classList.add("active-style");
+}
 });
